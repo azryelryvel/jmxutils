@@ -1,6 +1,5 @@
 language: java
 
-skip_cleanup: true
 
 before_deploy:
   - git config --local user.name "azryelryvel"
@@ -12,3 +11,4 @@ deploy:
   provider: releases
   api_key: $TOKEN
   file: "build/libs/jmxutils.jar"
+  skip_cleanup: true
