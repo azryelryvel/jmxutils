@@ -35,19 +35,4 @@ class JmxHelper {
 		}
 		return out;
 	}
-
-	/*
-	Map<String, List<Attribute>> getSimpleMbeansAttributesAssociation() throws IntrospectionException, ReflectionException, InstanceNotFoundException, IOException {
-		Map<ObjectName, List<MBeanAttributeInfo>> complexAssociation = getMbeansAttributesAssociation();
-		Map<String, List<Attribute>> out = new HashMap<>();
-		for (ObjectName objectName : complexAssociation.keySet()) {
-			String name = objectName.toString();
-			List<MBeanAttributeInfo> attributes = complexAssociation.get(objectName);
-			out.computeIfAbsent(name, k -> new ArrayList<>());
-			for (MBeanAttributeInfo attributeInfo : attributes) {
-				out.get(name).add(new Attribute(attributeInfo.getName(), attributeInfo.g))
-			}
-		}
-	}
-	*/
 }

@@ -15,7 +15,6 @@ public class PrometheusExporterTest {
 	private static final String ATTRIBUTE_TO_FIND = "HeapMemoryUsage";
 	private static final String SUBATTRIBUTE_TO_FIND = "committed";
 
-
 	@Test
 	public void export() throws IntrospectionException, ReflectionException, InstanceNotFoundException, IOException {
 		JmxHelper helper = new JmxHelper();

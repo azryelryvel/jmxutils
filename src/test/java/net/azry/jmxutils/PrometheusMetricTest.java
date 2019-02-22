@@ -6,9 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PrometheusMetricTest {
-
 	@Test
-	public void toStringTest() {
+	public void asString() {
 		Map<String, String> labels = new HashMap<>();
 		labels.put("test1", "1");
 		labels.put("test2", "2");

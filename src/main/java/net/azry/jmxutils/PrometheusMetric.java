@@ -15,8 +15,7 @@ public class PrometheusMetric {
 		this.value = value;
 	}
 
-	@Override
-	public String toString() {
+	private String asString() {
 		List<String> labelsString = new ArrayList<>();
 		for (String key : labels.keySet()) {
 			String value = labels.get(key).replaceAll("\"", "\\\"");
@@ -24,4 +23,10 @@ public class PrometheusMetric {
 		}
 		return name + "{" + String.join(",", labelsString) + "} " + value;
 	}
+
+	@Override
+	public String toString() {
+		return this.asString();
+	}
+
 }
