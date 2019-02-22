@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/azryelryvel/jmxutils.svg?branch=master)](https://travis-ci.org/azryelryvel/jmxutils)
+
 # JMX Utils
 
 ## Introdution
